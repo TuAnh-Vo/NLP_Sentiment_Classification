@@ -1,4 +1,4 @@
-# Sentiment Classification (Data Science Project, 2026)
+# NLP Sentiment Classification 
 
 Three-class sentiment classification (Negative `-1`, Neutral `0`, Positive `+1`)
 over a merged corpus of Amazon product reviews (Ni et al. 2019) and SemEval-2017
