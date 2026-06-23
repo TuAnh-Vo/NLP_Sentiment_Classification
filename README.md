@@ -15,16 +15,15 @@ The work is organised into three independent modelling routes. Each route loads
 the pre-split data on its own and applies its own preprocessing, so a decision in
 one route never leaks into another.
 
-- **Route A — TF-IDF baseline** *(implemented)*
+- **Route A — TF-IDF baseline** *(completed)*
   TF-IDF encoder, chi-squared feature selection (`SelectKBest`), classical
   classifiers (Naïve Bayes, Logistic Regression, Linear SVM). Framed as a
   well-documented baseline for Route C to beat.
-- **Route B — Static embeddings** *(planned)*
-  Word2Vec / GloVe / fastText averaged document vectors + classical classifiers.
+- **Route B — Static embeddings** *(completed)*
+  Word2Vec / GloVe / fastText / Sentence transformer Embeddings + classical classifiers.
   Uses lighter tokenisation that preserves word forms.
-- **Route C — Contextual embeddings** *(planned)*
-  BERTweet (Nguyen et al. 2020). The intended path to top performance; starts
-  from raw text using BERTweet's own normaliser/tokeniser.
+- **Route C — Contextual embeddings** *(completed)*
+  BERT-based-uncased, BERTweet-base, twitter-ROBERTA, BERTweet-large. The intended path to top performance.
 
 ## Repository layout
 
