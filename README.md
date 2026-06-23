@@ -68,8 +68,8 @@ Not redistributed in this repo.
 | Route | State        | Notes |
 |-------|--------------|-------|
 | A     | Implemented  | Bigram Logistic Regression best; ~0.68 test macro-F1 |
-| B     | Not started  | — |
-| C     | Not started  | — |
+| B     | Implemented  | Will be updated |
+| C     | Implemented  | Will be updated |
 
 Route A notes: neutral class is the main drag (F1 ≈ 0.52) and tweets underperform
 reviews; `k` past ~19k features barely moves the needle. Native tokenisation is
