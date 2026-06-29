@@ -91,7 +91,6 @@ The source database `nlp-data.db` is **not** redistributed — it lives on the V
 
 ---
 
----
 
 ## Reproduce
 
@@ -110,8 +109,6 @@ Run order:
 8. `route-c-bertweet-large.ipynb` — fine-tunes BERTweet-large, packages and uploads **(GPU required)**.
 
 > **GPU note:** Route C training was done on Kaggle (T4, free tier). VU Compute Hub nodes are CPU-only and unsuitable for Route C training, though they can serve the pickled model.
-
----
 
 ---
 
