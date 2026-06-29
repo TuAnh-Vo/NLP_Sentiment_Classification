@@ -2,7 +2,7 @@
 
 Three-class sentiment classification (Negative `-1`, Neutral `0`, Positive `+1`)
 over a merged corpus of Amazon product reviews (Ni et al. 2019) and SemEval-2017
-Task 4 tweets (Nakov et al. 2016). The deliverable is a reproducible pipeline
+Task 4 tweets (Nakov et al. 2016). The deliverable is a reproducible end-to-end pipeline
 plus a pickled model served behind an API and scored on a private test set
 (macro-F1).
 
@@ -12,7 +12,7 @@ VU Amsterdam — Data Science Project. Built and run on the VU Compute Hub
 ## Approach
 
 The work is organised into three independent modelling routes. Each route loads
-the pre-split data on its own and applies its own preprocessing, so a decision in
+the data on its own and applies its own preprocessing, so a decision in
 one route never leaks into another.
 
 - **Route A — TF-IDF baseline** *(completed)*
