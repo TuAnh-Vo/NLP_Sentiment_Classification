@@ -20,7 +20,7 @@ Group members: Anh Vo Nhu Tu · Igor Mamyan · Kavya Kinnera · Mika van Straate
 
 **Leaderboard (deployed BERTweet-large API):** 2nd on Reviews (0.74) · 4th on Tweets (0.63)
 
-Two findings recur across every route: the **Neutral class** is the binding bottleneck (it has no vocabulary of its own — it is the absence of strong sentiment), and the **review-vs-tweet domain gap** shrinks as model capacity grows, from 0.12 in Route A to 0.0004 for the Route C ensemble.
+Two findings recur across every route: the **Neutral class** is the binding bottleneck (it has no vocabulary of its own, it is the absence of strong sentiment), and the **review-vs-tweet domain gap** shrinks as model capacity grows, from 0.12 in Route A to 0.0004 for the Route C ensemble.
 
 ---
 
