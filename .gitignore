@@ -1,43 +1,45 @@
-# --- Project data & artifacts (not redistributed) ---
-splits/*.csv
-!splits/.gitkeep
+# ── Model & data artefacts ──────────────────────────────────
 *.model
+*.pkl
+*.pt
+*.bin
+*.h5
+*.onnx
+*.safetensors
 *.db
 *.sqlite
-*.sqlite3
 
-# --- Python ---
+# ── Jupyter ─────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Python ──────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# ── Virtual environments ────────────────────────────────────
 .venv/
 venv/
 env/
-.python-version
 
-# --- Jupyter ---
-.ipynb_checkpoints/
-*.nbconvert.ipynb
+# ── Large pre-trained embedding files (download separately) ──
+# See route_b.ipynb for download instructions
+glove*.txt
+crawl-300d*.vec
+GoogleNews*.bin
+*.txt.gz
+*.vec.gz
+*.bin.gz
 
-# --- NLTK / model caches ---
-nltk_data/
-.cache/
-*.pt
-*.bin
-
-# --- LaTeX build artifacts ---
-report/*.aux
-report/*.log
-report/*.out
-report/*.toc
-report/*.bbl
-report/*.blg
-report/*.synctex.gz
-report/*.fdb_latexmk
-report/*.fls
-
-# --- OS / editor ---
+# ── OS / editor cruft ───────────────────────────────────────
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+*.out
