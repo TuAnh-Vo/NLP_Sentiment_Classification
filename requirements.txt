@@ -1,16 +1,43 @@
-# Core — Route A + EDA
+# ============================================================
+# NLP Sentiment Classification — dependencies
+# Python 3.11
+# Install:  pip install -r requirements.txt
+# ============================================================
+# Routes A & B run on CPU (VU Compute Hub or local).
+# Route C training requires a GPU (T4) — run on Kaggle/Colab.
+# ============================================================
+
+# ── Core ────────────────────────────────────────────────────
 numpy
 pandas
+scipy
 scikit-learn
-nltk
 matplotlib
+seaborn
 wordcloud
+tqdm
 jupyter
+ipykernel
 
-# Route B (static embeddings) — uncomment when starting
-# gensim
+# ── Text utilities (Routes A & B) ───────────────────────────
+nltk
+beautifulsoup4
+emoji==0.6.0          # pinned: required by BERTweet's slow tokenizer
 
-# Route C (BERTweet) — uncomment when starting
-# torch
-# transformers
-# emoji
+# ── Static embeddings (Route B) ─────────────────────────────
+gensim                # Word2Vec / KeyedVectors loader
+# GloVe and FastText vectors are downloaded inside route_b.ipynb
+
+# ── Sentence transformers (Route B extension) ───────────────
+sentence-transformers
+
+# ── Transformers (Route C) ──────────────────────────────────
+torch                 # CPU wheel for local inference; GPU wheel on Kaggle/Colab
+transformers==5.0.0   # pinned: required for the BERTweet ensemble packaging
+sentencepiece
+protobuf
+
+# ── API deployment ──────────────────────────────────────────
+flask
+flask-cors
+gunicorn
